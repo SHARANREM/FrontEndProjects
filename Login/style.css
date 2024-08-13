@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.headbox{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(HD-wallpaper-frozen-water-rock-mountains-greenery-nature-trees-under-white-clouds-sky-lock-screen.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    
+    background: rgba(255, 255, 255, 0.127);
+    backdrop-filter: blur(10px);
+    height: 120px;
+    border-radius: 90px;
+}
+.extra{
+    background: rgba(255, 255, 255, 0.092);
+    backdrop-filter: blur(10px);
+    padding-bottom: 15px;
+    padding-right: 10px;
+    height: 120px;
+    
+    border-radius: 70px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    padding: 35px 0px;
+   
+}
+.logo{
+    color: white;
+    font-weight: bolder;
+    padding: 5px 0px;
+    cursor: none;
+    text-align: center;
+    width: 100px;
+    transition: 2s;
+    
+}
+.logo:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(255, 255, 255),0 0 20px rgb(0, 255, 17),0 0 40px rgb(255, 255, 255);
+    font-weight: 700;
+    width: 10%;
+    background: rgb(0, 0, 0);
+    backdrop-filter: blur(100%);
+    border-radius: 30px;
+    transform: rotate(-720deg); 
+    transition: transform 2s;
+}
+.topics li{
+    list-style: none;   
+    display: inline-block;
+    margin: 0px 20px;
+    margin-top: 11px;
+    position: relative;
+}
+.topics li a{
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.topics li a::after{
+    content: "";
+    height: 200%;
+    width: 140%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: -20%;
+    bottom: -10px;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+    border-radius: 50px;
+    transition: transform .5s;
+}
+
+.topics li a:hover{
+    color: black;
+}
+.topics li a:hover:after{
+   
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.contents{
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 40%;
+    width: 100%;
+}
+.contents .topi{
+    font-size: 5.1em;
+}
+.contents .para{
+    font-size: 1.5em;
+}
+.button .ok {
+    width: 200px;
+    background: rgba(255, 255, 255, 0.5); 
+    padding: 15px 0;
+    margin: 20px auto; 
+    border: none;
+    border-radius: 30px;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    border: none;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.1em;
+    transition: .7s;
+}
+.button .ok:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(255, 255, 255),0 0 20px rgb(255, 255, 255),0 0 40px rgb(255, 255, 255);
+    font-size: 1.1em;
+}
